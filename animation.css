@@ -1,0 +1,436 @@
+.animation-first {
+  position: absolute;
+  animation: my_animation2 2.5s;
+  animation-fill-mode: both;
+}
+
+.animation-last {
+  position: absolute;
+  animation: my_animation3 2.5s;
+  animation-fill-mode: both;
+}
+.animation-about-us {
+  animation: animation-about-us 2.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes my_animation2 {
+  from {
+    left: -200px;
+    opacity: 0;
+  }
+
+  to {
+    left: 100px;
+    opacity: 1;
+  }
+}
+
+@keyframes my_animation3 {
+  from {
+    right: -200px;
+    opacity: 0;
+  }
+
+  to {
+    right: 100px;
+    opacity: 1;
+  }
+}
+
+@keyframes animation-about-us {
+  from {
+    right: -200px;
+    opacity: 0;
+  }
+
+  to {
+    right: 150px;
+    opacity: 1;
+  }
+}
+
+.title {
+  position: relative;
+  width: 100%;
+}
+
+.element-animation {
+  /* Скроем элемент в начальном состоянии */
+  opacity: 0;
+  transform: translateY(30%);
+}
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 1s ease-in;
+  transform: translateY(0%);
+}
+.list-services h1{
+overflow: hidden;
+white-space: nowrap;
+animation: printed_text 3s steps(10000, end);
+padding: 0;
+}
+
+@keyframes printed_text {
+from { width: 0}
+to { width: 100%}
+}
+
+@media screen and (max-width: 1140px) and (min-width: 0) {
+  .list-services h1{
+    font-size: 21.5px;
+    line-height: 200%;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 610px) {
+  .list-services{
+  padding: 120px 0 40px;
+ }
+  
+  .list-services h1{
+    font-size: 17.2px;
+  }
+
+  .description-item h2{
+  padding: 24px 0;
+  }
+
+  .description-list_item p{
+  padding-left: 24px;
+  font-size: 17px;
+  color: #005506;
+  }
+}
+
+@media screen and (max-width: 610px) and (min-width: 461px) {
+  .list-services{
+    padding: 120px 0 40px;
+   }
+    
+    .list-services h1{
+      font-size: 12px;
+    }
+  
+    .description-item h2{
+    padding: 20px 0;
+    }
+  
+    .description-list_item p{
+    padding-left: 24px;
+    font-size: 12px;
+    color: #005506;
+  }
+}
+@media screen and (max-width: 461px) and (min-width: 410px) {
+  .list-services{
+    padding: 120px 0 40px;
+   }
+    
+    .list-services h1{
+      font-size: 11px;
+    }
+  
+    .description-item h2{
+    padding: 20px 0;
+    }
+  
+    .description-list_item p{
+    padding-left: 24px;
+    font-size: 12px;
+    color: #005506;
+  }
+}
+@media screen and (max-width: 410px) and (min-width: 361px) {
+  .list-services{
+    padding: 110px 0 40px;
+   }
+    
+    .list-services h1{
+      font-size: 9.5px;
+    }
+  
+    .description-item h2{
+    padding: 20px 0;
+    }
+  
+    .description-list_item p{
+    padding-left: 24px;
+    font-size: 10px;
+    color: #005506;
+  }
+}
+@media screen and (max-width: 361px) and (min-width: 0) {
+  .list-services{
+    padding: 110px 0 40px;
+   }
+    
+    .list-services h1{
+      font-size: 7px;
+    }
+  
+    .description-item h2{
+    padding: 20px 0;
+    }
+  
+    .description-list_item p{
+    padding-left: 24px;
+    font-size: 8px;
+    color: #005506;
+  }
+}
+@media screen and (max-width: 1450px) and (min-width: 1290px) {
+  @keyframes my_animation2 {
+    from {
+      left: -200px;
+      opacity: 0;
+    }
+  
+    to {
+      left: 50px;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes my_animation3 {
+    from {
+      right: -200px;
+      opacity: 0;
+    }
+  
+    to {
+      right: 50px;
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 1290px) and (min-width: 1140px) {
+  .banner img {
+    width: 650px;
+  }
+  @keyframes my_animation2 {
+    from {
+      left: -200px;
+      opacity: 0;
+    }
+  
+    to {
+      left: 0px;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes my_animation3 {
+    from {
+      right: -200px;
+      opacity: 0;
+    }
+  
+    to {
+      right: 0px;
+      opacity: 1;
+    }
+  }
+}
+@media screen and (max-width: 1140px) and (min-width: 930px) {
+
+  @keyframes my_animation2 {
+    from {
+      left: -200px;
+      opacity: 0;
+    }
+  
+    to {
+      left: 0px;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes my_animation3 {
+    from {
+      right: -200px;
+      opacity: 0;
+    }
+  
+    to {
+      right: 0px;
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 930px) and (min-width: 815px) {
+  .banner img {
+   padding-top: 50px;
+  }
+  @keyframes my_animation2 {
+    from {
+      top: -200px;
+      opacity: 0;
+    }
+  
+    to {
+      top: 50px;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes my_animation3 {
+    from {
+      top: -200px;
+      opacity: 0;
+    }
+  
+    to {
+      top: 300px;
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 815px) and (min-width: 768px) {
+  .banner img {
+   padding-top: 50px;
+  }
+  @keyframes my_animation2 {
+    from {
+      top: -200px;
+      opacity: 0;
+    }
+  
+    to {
+      top: 100px;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes my_animation3 {
+    from {
+      top: -200px;
+      opacity: 0;
+    }
+  
+    to {
+      top: 330px;
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 611px) {
+  .banner img {
+    padding-top: 50px;
+   }
+  @keyframes my_animation2 {
+    from {
+      top: -200px;
+      opacity: 0;
+    }
+  
+    to {
+      top: 50px;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes my_animation3 {
+    from {
+      top: -200px;
+      opacity: 0;
+    }
+  
+    to {
+      top: 280px;
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 611px) and (min-width: 609px) {
+  .banner img {
+    padding-top: 90px;
+   }
+  @keyframes my_animation2 {
+    from {
+      top: -200px;
+      opacity: 0;
+    }
+  
+    to {
+      top: 80px;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes my_animation3 {
+    from {
+      top: -200px;
+      opacity: 0;
+    }
+  
+    to {
+      top: 280px;
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 609px) and (min-width: 362px) {
+  .banner img {
+    padding-top: 80px;
+   }
+  @keyframes my_animation2 {
+    from {
+      top: -200px;
+      opacity: 0;
+    }
+  
+    to {
+      top: 70px;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes my_animation3 {
+    from {
+      top: -200px;
+      opacity: 0;
+    }
+  
+    to {
+      top: 270px;
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 362px) and (min-width: 0) {
+  .banner img {
+    padding-top: 70px;
+   }
+  @keyframes my_animation2 {
+    from {
+      top: -200px;
+      opacity: 0;
+    }
+  
+    to {
+      top: 70px;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes my_animation3 {
+    from {
+      top: -200px;
+      opacity: 0;
+    }
+  
+    to {
+      top: 100%;
+      opacity: 1;
+    }
+  }
+}

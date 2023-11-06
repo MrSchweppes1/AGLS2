@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>Alexandra Green LandSign</title>
+  </head>
+
+  <body>
+    
+    <header>
+      <div class="container d-flex al-c jc-sb">
+        <a href="index.html" class="logo">
+          <img src="images/Logo.svg" alt=""  />
+        </a>
+        <div class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="header-menu menu d-g ji-c">
+          <ul class="header-menu d-flex jc-sb al-c">
+            <li class="header-menu_listitem actives" ><a href="">о нас</a></li>
+            <li class="header-menu_listitem">
+              <a href="page-services.html">услуги</a>
+            </li>
+            <li class="header-menu_listitem portfolio-menu d-flex">
+              <a>портфолио</a>
+              <ul class="portfolio-menulist d-g alc-c ji-c">
+                <li class="portfolio-menu_listitem">
+                  <a href="page-portfolio.html">реализация</a>
+                </li>
+                <li class="portfolio-menu_listitem" >
+                  <a href="page-projects.html">пректирование</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-menu_listitem">
+              <a href="page-contacs.html">контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="icons d-g">
+          <a href="" class="icons-viber"
+            ><img src="images/Viber-header.svg" alt=""
+          /></a>
+          <a href="https://instagram.com/alexandra_green_landsign?igshid=YmMyMTA2M2Y=" class="icons-inst"
+            ><img src="images/Inst-header.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="banner">
+        <div class="container title">
+          <h1>Ландшафтная студия Alexandra Green LandSign</h1>
+          <div class="banner-logo d-flex al-c jc-c">
+            <p class=" animation-first">Гармония в природе на вашем островке земли</p>
+            <img src="images/banner-logo.png" alt="" />
+            <p class="animation-last">Создаю сады для комфортной жизни</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-us element-animation">
+        <div class="container">
+          <h2>О нас</h2>
+          <div class="about-us_info d-flex jc-sa al-c">
+            <img class="about-us_img" src="images/about-us-image.png" alt="" />
+            <p class="about-us_text">
+              Здравствуйте! Меня зовут Зайцева Александра. Я ландшафтный дизайнер  по призванию и образованию. 
+              Занимаюсь проектированием частных садов, благоустройством и озеленением 7 лет. 
+              Создаю сады с душой. Рада приветствовать Вас на моём сайте.
+            </p>
+            <p class="background-text animation-about-us">
+              Alexandra Green <br />
+              LandSign
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="services  element-animation">
+        <div class="container">
+          <h2>Услуги</h2>
+          <p class="background-text">
+            Alexandra Green <br />
+            LandSign
+          </p>
+          <div class="services-list d-g">
+            <a href="page-services.html" class="services-list_item">
+              <div class="services-list_item">
+                <img src="images/services-project.png" alt="" />
+                <p>ландшафтный дизайн</p>
+              </div>
+            </a>
+            <a href="page-services.html" class="services-list_item">
+              <div class="services-list_item">
+                <img src="images/services-gazon.png" alt="" />
+                <p>благоустройство</p>
+              </div>
+            </a>
+            <a href="page-services.html" class="services-list_item">
+              <div class="services-list_item">
+                <img src="images/services-village.png" alt="" />
+                <p>озеленение</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio element-animation">
+        <div class="container container-slider">
+          <h2>Портфолио</h2>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-zoom-container">
+                <img src="images/project-afonino.png" alt="" />
+              </div>
+              <div class="swiper-slide swiper-zoom-container">
+                <img src="images/project-burevestnik.png" alt="" />
+              </div>
+              <div class="swiper-slide swiper-zoom-container">
+                <img src="images/project-elhovka.png" alt="" />
+              </div>
+              <div class="swiper-slide swiper-zoom-container">
+                <img src="images/project-nice-place.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="element-animation">
+      <div class="container d-g ji-c" id="fitback-form">
+        <h2 class="request">Оставьте заявку</h2>
+        <form action="telegram.php" method="POST" class="d-g ji-c">
+          <div class="callback-form d-flex jc-sa">
+            <div class="callback-form_date d-g">
+              <input
+                type="text"
+                name="user_name"
+                id=""
+                placeholder="Введите имя"
+              />
+              <input
+                type="text"
+                name="user_phone"
+                id=""
+                placeholder="Введите номер телефона"
+              />
+              <input
+                type="text"
+                name="user_email"
+                id=""
+                placeholder="Введите e-mail"
+              />
+            </div>
+            <textarea
+              class="callback-form_text"
+              name="user_text"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder=" Введите сообщение"
+            ></textarea>
+          </div>
+          <button type="submit" href = "thank-you.html">Отправить данные</button>
+        </form>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
